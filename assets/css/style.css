@@ -11,6 +11,9 @@ body {
 [v-cloak] > * { display:none }
 [v-cloak]::before { content: "loading data ... " }
 
+.notification a:not(.button) {
+    text-decoration: none !important;
+}
 
 @media screen and (min-width: 1200px) {
 

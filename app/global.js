@@ -2,7 +2,6 @@
 
 // console.clear(' ');
 
-
 var app = new Vue({
    el: '#global',
    data: {
