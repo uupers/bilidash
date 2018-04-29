@@ -1,10 +1,10 @@
 var winwidth = window.innerWidth;
-
+var ghpath = "https://raw.githubusercontent.com/uupers/bilidash/gh-pages/data/overview/"
 
 // duration
 
 function durationplot() {
-  Plotly.d3.csv("../../data/overview/dur_hist_data.csv", function(data) {
+  Plotly.d3.csv(ghpath+"dur_hist_data.csv", function(data) {
     durationData(data)
   });
 
@@ -69,7 +69,7 @@ durationplot();
 // Coin
 
 function coinplot() {
-  Plotly.d3.csv("../../data/overview/coin_hist_data.csv", function(data) {
+  Plotly.d3.csv(ghpath+"coin_hist_data.csv", function(data) {
     coinData(data)
   });
 
@@ -134,7 +134,7 @@ coinplot();
 // Views
 
 function viewplot() {
-  Plotly.d3.csv("../../data/overview/view_hist_data.csv", function(data) {
+  Plotly.d3.csv(ghpath+"view_hist_data.csv", function(data) {
     viewData(data)
   });
 
