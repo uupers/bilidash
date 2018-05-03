@@ -41,7 +41,7 @@ def groomjob():
     packdata = bilidash.groomjob(soup)
     bilidash.DTRecorder(dt_now, packdata, datafile )
 
-permcronsched( s, 1, groomjob )
+bilidash.permcronsched( s, 1, groomjob )
 
 s.run()
 
