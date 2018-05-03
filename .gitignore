@@ -1,2 +1,3 @@
-/server/bilidash.egg-info/*
-/server/.ipynb_checkpoints
+server/bilidash.egg-info
+server/.ipynb_checkpoints
+server/bilidash/.ipynb_checkpoints

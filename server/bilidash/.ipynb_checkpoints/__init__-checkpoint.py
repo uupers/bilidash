@@ -4,7 +4,7 @@ import datetime
 
 from .recorder import DTRecorder
 from .parsers import groomjob
-from .cronjob import permcronsched
+from .cronjob import permcronsched, current_dt_str
 
 
 
