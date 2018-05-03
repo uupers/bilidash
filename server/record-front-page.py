@@ -18,24 +18,24 @@ deltat = 60*10
 
 
 
-# Scrape raw data
-html = urlopen(baseurl).read().decode('utf-8')
-soup = BeautifulSoup(html, features='lxml')
-
-
 # Create scheduler
 s = sched.scheduler(time.time, time.sleep)
 
 
 # Run program
 def groomjob():
-    
+
+    # Scrape raw data
+    html = urlopen(baseurl).read().decode('utf-8')
+    soup = BeautifulSoup(html, features='lxml')
+
+    # Determine whether to create a file or append to file
     if os.path.exists(datafile):
         append_write = 'a' # append if already exists
     else:
         append_write = 'w' # make a new file if not
 
-    
+    # analyze data 
     packdata = bilidash.groomjob(soup)
     bilidash.DTRecorder( bilidash.current_dt_str(), packdata, datafile, append_write)
     print('Data Dumped')
