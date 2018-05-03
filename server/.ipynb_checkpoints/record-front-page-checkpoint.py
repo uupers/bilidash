@@ -14,7 +14,7 @@ dt_now = bilidash.current_dt_str()
 datafile = dt_now + "-data.csv"
 baseurl='https://www.bilibili.com/'
 dt_now = str(datetime.datetime.now() )
-deltat = 30
+deltat = 60*10
 
 
 
@@ -40,7 +40,7 @@ def groomjob():
     bilidash.DTRecorder( bilidash.current_dt_str(), packdata, datafile, append_write)
     print('Data Dumped')
 
-bilidash.permcronsched( s, 20, groomjob )
+bilidash.permcronsched( s, deltat, groomjob )
 
 s.run()
 
