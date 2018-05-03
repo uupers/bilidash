@@ -15,5 +15,5 @@ def permcronsched(scheduler, interval, action, actionargs=()):
     """
 
     action(*actionargs)
-    scheduler.enter(interval, 1, cronsched, (scheduler, interval, action, actionargs))
+    scheduler.enter(interval, 1, permcronsched, (scheduler, interval, action, actionargs))
     
