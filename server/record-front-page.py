@@ -36,7 +36,7 @@ def groomjob():
         append_write = 'w' # make a new file if not
 
     # analyze data 
-    packdata = bilidash.groomjob(soup)
+    packdata = bilidash.groomaid(soup)
     bilidash.DTRecorder( bilidash.current_dt_str(), packdata, datafile, append_write)
     print('Data Dumped')
 

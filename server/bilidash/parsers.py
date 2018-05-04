@@ -1,5 +1,6 @@
+import requests
 
-def groomjob(beasoup):
+def groomaid(beasoup):
     """
     Parse data for groom (first row of recommendation)
     beasoup is the BeautifulSoup object with features lxml
@@ -10,3 +11,13 @@ def groomjob(beasoup):
     aid = [i.a['href'].split('av')[1][:-1] for i in groom]
     
     return aid
+
+def avapi(apiurl):
+    """
+    Returns the api data for vid
+    """
+
+    rsp = requests.get(apiurl)
+    avdata = rsp.json()['data']
+    
+    return avdata
