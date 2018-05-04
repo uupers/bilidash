@@ -1,4 +1,4 @@
-var winwidth = (window.innerWidth)
+var winwidth = (window.innerWidth) * 0.92
 var ghpath = "https://raw.githubusercontent.com/uupers/bilidash/gh-pages/data/overview/"
 
 // duration
