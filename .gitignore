@@ -1,3 +1,21 @@
-*.egg-info
-ipynb_checkpoints
-__pycache__
+# Created by https://www.gitignore.io/api/python,jupyternotebook
+
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+#
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
