@@ -47,7 +47,7 @@ def scrape():
         
     if datetime.datetime.now() > end_time:
         
-        print("Started at "+dt2str(start_time) + '\n Ended at '+dt2str( datetime.datetime.now() ) )
+        print("Started at "+bilidash.dt2str(start_time) + '\n Ended at '+ bilidash.dt2str( datetime.datetime.now() ) )
         sys.exit
 
         
