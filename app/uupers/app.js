@@ -129,7 +129,7 @@ function str2dt(str) {
   var dt = new Date(dtstr[0] + '-' + dtstr[1] + '-' + dtstr[2] + ' ' + dtstr[3] + ':' + dtstr[4] + ':' + dtstr[5])
 
   // convert from MDT to Beijing Time and return
-  return new Date(dt.getTime() + 14 * 3600 * 1000)
+  return new Date(dt.getTime() + 8 * 3600 * 1000)
 
 }
 
